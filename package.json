@@ -1,9 +1,12 @@
 {
   "name": "query-file-content",
   "version": "0.0.1",
-  "description": "A module to query file content from pdf, doc, docx, and odt formates",
-  "main": "index.js",
+  "description": "A module to query file content from pdf, doc, docx, and odt formates, build on textract",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
+    "prepublish":"npm run build",
+    "build":"tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,5 +23,12 @@
   "bugs": {
     "url": "https://github.com/a4abs/query-file-content/issues"
   },
-  "homepage": "https://github.com/a4abs/query-file-content#readme"
+  "homepage": "https://github.com/a4abs/query-file-content#readme",
+  "dependencies": {
+    "textract": "^2.5.0"
+  },
+  "devDependencies": {
+    "@types/textract": "^2.4.2",
+    "typescript": "^5.1.3"
+  }
 }
