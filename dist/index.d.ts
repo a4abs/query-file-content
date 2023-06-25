@@ -1,2 +1,2 @@
-import { sayHello } from "./lib/query-file-content";
-export { sayHello as default };
+import { extractFileData } from "./lib/query-file-content";
+export { extractFileData as default };
